@@ -8,18 +8,20 @@
 	<?php $galleryConstant = "k_gallery_"; $i = 1; while ($i <= 60) : ?>
 	<li class="img-wrapper">
         <img loading="lazy" 
-            srcset="<?php print_r(get_field($galleryConstant . $i)['sizes']['medium']); 
-            ?> <?php print_r(get_field($galleryConstant . $i)['sizes']['medium-width']); 
-            ?>w, <?php print_r(get_field($galleryConstant . $i)['sizes']['medium_large']); 
-            ?> <?php print_r(get_field($galleryConstant . $i)['sizes']['medium_large-width']); 
-            ?>w, <?php print_r(get_field($galleryConstant . $i)['sizes']['large']); 
-            ?> <?php print_r(get_field($galleryConstant . $i)['sizes']['large-width']); 
-            ?>w, <?php print_r(get_field($galleryConstant . $i)['sizes']['1536x1536']); 
-            ?> <?php print_r(get_field($galleryConstant . $i)['sizes']['1536x1536-width']); 
-            ?>w, <?php print_r(get_field($galleryConstant . $i)['sizes']['2048x2048']); 
-            ?> <?php print_r(get_field($galleryConstant . $i)['sizes']['2048x2048-width']); 
-            ?>w," src="<?php print_r(get_field($galleryConstant . $i)['url']); 
-            ?>"
+            srcset=
+            "
+                <?php print_r(get_field($galleryConstant . $i)['sizes']['medium']); ?> 
+                <?php print_r(get_field($galleryConstant . $i)['sizes']['medium-width']); ?>w, 
+                <?php print_r(get_field($galleryConstant . $i)['sizes']['medium_large']); ?>  
+                <?php print_r(get_field($galleryConstant . $i)['sizes']['medium_large-width']); ?>w, 
+                <?php print_r(get_field($galleryConstant . $i)['sizes']['large']); ?>  
+                <?php print_r(get_field($galleryConstant . $i)['sizes']['large-width']); ?>w,  
+                <?php print_r(get_field($galleryConstant . $i)['sizes']['1536x1536']); ?>  
+                <?php print_r(get_field($galleryConstant . $i)['sizes']['1536x1536-width']); ?>w,  
+                <?php print_r(get_field($galleryConstant . $i)['sizes']['2048x2048']); ?> 
+                <?php print_r(get_field($galleryConstant . $i)['sizes']['2048x2048-width']); ?>w,
+            "  
+            src="<?php print_r(get_field($galleryConstant . $i)['url']); ?>"
         >
 	</li>
 	<?php $i++; endwhile ?>
