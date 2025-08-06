@@ -3,7 +3,7 @@
 <a href="https://kernstudio.com.br">Kern Studio</a> é uma empresa que produz imagens realistas de projetos arquitetônicos não construídos, e precisava de uma <a href="https://kernstudio.com.br/gallery">galeria</a> de fotos para expor seu trabalho em formato de um grid que permitisse escolher a quantidade de imagens por fileira, possibilitando a setorização por projeto e que fosse de fácil manutenção por uma pessoa leiga em código. 
 
 <p align="center">
-  <img src="gallery-img.PNG" alt="Modelo Relacional" width="600px">
+  <img src="gallery-img.PNG" alt="Imagem da galeria" width="600px">
 </p>
 
 O objetivo era implementar um código em CSS e JavaScript que, independente das dimensões das imagens e da quantidade de imagens por fileira, não desmonta o grid:
@@ -16,4 +16,5 @@ O objetivo era implementar um código em CSS e JavaScript que, independente das 
   <li>Utilização de CSS ‘nth-child’ para criar um layout assimétrico e mais dinâmico, definindo quantas imagens estarão presentes em cada fileira.</li>
   <li>Dessa forma, hoje o cliente possui a autonomia desejada para atualizar a galeria quando quiser e de maneira simples: precisa apenas acessar a página da galeria e alterar diretamente a imagem do field desejado.</li>
 </ul>
+
 
